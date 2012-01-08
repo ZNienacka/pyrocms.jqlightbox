@@ -8,6 +8,10 @@ A jQuery LightBox gallery where images are shown in popup window.
 * Configure javascript which images will open in popup window or some other options which uses JQLightBox
 * Don't want to use it just unpublish it and thats it
 
+# Compatible with
+
+PyroCMS 2.0
+
 # Usage
 
 	{{ jqlightbox:init }}
