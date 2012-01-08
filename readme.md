@@ -4,6 +4,7 @@ A jQuery LightBox gallery where images are shown in popup window.
 
 # Summary
 
+* Use it with Gallery module
 * Change design of the gallery
 * Configure javascript which images will open in popup window or some other options which uses JQLightBox
 * Don't want to use it just unpublish it and thats it
