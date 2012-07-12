@@ -26,9 +26,9 @@ If you want to use with gallery pages than you have to change the gallery module
 
         <ul id="gallery">
             {{ galleries:images slug="dive" limit="5" }}
-		<li><a href="{{ url:base }}files/large/{{ file_id }}" title="{{ name }}">
+                <li><a href="{{ url:base }}files/large/{{ file_id }}" title="{{ name }}">
                     <img src="{{ url:site }}files/thumb/{{ file_id }}/75/75" alt="{{ description }}"/>
-		</a></li>
+                </a></li>
             {{ /galleries:images }}
         </ul>
 
