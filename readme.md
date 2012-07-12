@@ -11,7 +11,7 @@ A jQuery LightBox gallery where images are shown in popup window.
 
 # Compatible with
 
-PyroCMS 2.1 >=
+PyroCMS >= 2.1
 
 #Dependencies
 
