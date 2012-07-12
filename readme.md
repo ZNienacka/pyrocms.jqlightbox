@@ -11,11 +11,26 @@ A jQuery LightBox gallery where images are shown in popup window.
 
 # Compatible with
 
-PyroCMS 2.0
+PyroCMS 2.1 >=
 
-# Usage
+#Dependencies
 
-	{{ jqlightbox:init }}
+You can use it wit module Gallery
+
+# How to integrate on the page
+This is the code wich shows your particular gallery on any page and it works great 
+with this module. If you change anything here band the gallery doesnt work as you
+expected it is probably because you also have to change JS code in the settings.
+
+If you want to use with gallery pages than you have to change the gallery module templates.
+
+        <ul id="gallery">
+            {{ galleries:images slug="dive" limit="5" }}
+		<li><a href="{{ url:base }}files/large/{{ file_id }}" title="{{ name }}">
+                    <img src="{{ url:site }}files/thumb/{{ file_id }}/75/75" alt="{{ description }}"/>
+		</a></li>
+            {{ /galleries:images }}
+        </ul>
 
 # Example of CSS
 
@@ -40,11 +55,11 @@ PyroCMS 2.0
 # Example of JavaScript
 
 	$(function() {
-  		$('#gallery ul li a').lightBox({
-			imageLoading: '{{ asset:image_path file="lightbox-ico-loading.gif" module="jqlightbox" }}',
- 			imageBtnClose: '{{ asset:image_path file="lightbox-btn-close.gif" module="jqlightbox" }}',
- 			imageBtnPrev: '{{ asset:image_path file="lightbox-btn-prev.gif" module="jqlightbox" }}',
- 			imageBtnNext: '{{ asset:image_path file="lightbox-btn-next.gif" module="jqlightbox" }}',
+  		$('#gallery li a').lightBox({
+			imageLoading: '{{ asset:image_path file="jqlightbox::lightbox-ico-loading.gif" }}',
+ 			imageBtnClose: '{{ asset:image_path file="jqlightbox::lightbox-btn-close.gif" }}',
+ 			imageBtnPrev: '{{ asset:image_path file="jqlightbox::lightbox-btn-prev.gif" }}',
+ 			imageBtnNext: '{{ asset:image_path file="jqlightbox::lightbox-btn-next.gif" }}',
   		});
 	});
 	

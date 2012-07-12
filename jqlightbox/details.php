@@ -2,7 +2,7 @@
 
 class Module_Jqlightbox extends Module {
 
-	public $version = '1.0';
+	public $version = '1.1';
 
 	public function info()
 	{
@@ -58,11 +58,11 @@ class Module_Jqlightbox extends Module {
  #gallery ul a:hover { color: #fff; }',
  
  '$(function() {
-  $(\'#gallery a\').lightBox({
-	imageLoading: \'{{ asset:image_path file=\"lightbox-ico-loading.gif\" module=\"jqlightbox\" }}\',
-	imageBtnClose: \'{{ asset:image_path file=\"lightbox-btn-close.gif\" module=\"jqlightbox\" }}\',
-	imageBtnPrev: \'{{ asset:image_path file=\"lightbox-btn-prev.gif\" module=\"jqlightbox\" }}\',
-	imageBtnNext: \'{{ asset:image_path file=\"lightbox-btn-next.gif\" module=\"jqlightbox\" }}\',
+  $(\'#gallery ul li a\').lightBox({
+        imageLoading: '{{ asset:image_path file=\"jqlightbox::lightbox-ico-loading.gif\" }}',
+ 	imageBtnClose: '{{ asset:image_path file=\"jqlightbox::lightbox-btn-close.gif\" }}',
+ 	imageBtnPrev: '{{ asset:image_path file=\"jqlightbox::lightbox-btn-prev.gif\" }}',
+ 	imageBtnNext: '{{ asset:image_path file=\"jqlightbox::lightbox-btn-next.gif\" }}',
   });
 });')";
 
