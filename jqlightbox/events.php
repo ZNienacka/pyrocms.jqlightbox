@@ -32,8 +32,8 @@ class Events_Jqlightbox
         {
                 return NULL;	
         }
-                
-        Asset::add_path('jqlightbox', 'addons/shared_addons/modules/jqlightbox/');
+        //Asset::add_path('jqlightbox', ADDONPATH.'modules/jqlightbox/');
+        Asset::add_path('jqlightbox', SHARED_ADDONPATH.'modules/jqlightbox/');
         
         $this->ci->template->append_js('jqlightbox::jquery.lightbox-0.5.pack.js');
         $this->ci->template->append_css('jqlightbox::jquery.lightbox-0.5.css');
