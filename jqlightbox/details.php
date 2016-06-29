@@ -59,10 +59,10 @@ class Module_Jqlightbox extends Module {
  
  '$(function() {
   $(\'#gallery ul li a\').lightBox({
-        imageLoading: '{{ asset:image_path file=\"jqlightbox::lightbox-ico-loading.gif\" }}',
- 	imageBtnClose: '{{ asset:image_path file=\"jqlightbox::lightbox-btn-close.gif\" }}',
- 	imageBtnPrev: '{{ asset:image_path file=\"jqlightbox::lightbox-btn-prev.gif\" }}',
- 	imageBtnNext: '{{ asset:image_path file=\"jqlightbox::lightbox-btn-next.gif\" }}',
+        imageLoading: \'{{ asset:image_path file=\"jqlightbox::lightbox-ico-loading.gif\" }}\',
+ 	imageBtnClose: \'{{ asset:image_path file=\"jqlightbox::lightbox-btn-close.gif\" }}\',
+ 	imageBtnPrev: \'{{ asset:image_path file=\"jqlightbox::lightbox-btn-prev.gif\" }}\',
+ 	imageBtnNext: \'{{ asset:image_path file=\"jqlightbox::lightbox-btn-next.gif\" }}\',
   });
 });')";
 
